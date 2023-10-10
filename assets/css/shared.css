@@ -23,13 +23,6 @@ main{
     min-width:634px;
 }
 
-.banner{
-    background-image: url(../img/capa.jpg);
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 nav{
     background-color: var(--contraste);
     height: 50px;
