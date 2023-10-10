@@ -1,3 +1,9 @@
+:root{
+    --background:#000;
+    --contraste: #708090;
+    --texto: #fff;
+}
+
 body{
     background-image: url(https://images.squarespace-cdn.com/content/v1/5d9eed71525d4d25aaeeb997/1575020573023-B0A0OZEXLN0MG3JKXWM6/Screen6_Gamescom_GS_Exclusive.jpg);
     align-items: center;
@@ -6,12 +12,12 @@ body{
 }
 
 main{
-    background-color: black;
-    color:white;
+    background-color: var(--background);
+    color:var(--texto);
     font-family: 'Times New Roman', Times, serif;
     width: 50%;
     height: 100vh;
-    border: 1px solid white;
+    border: 1px solid var(--texto);
     border-radius: 10px;
     max-width: 1020px;
     min-width:634px;
@@ -25,7 +31,7 @@ main{
 }
 
 nav{
-    background-color: rgb(126, 139, 160);
+    background-color: var(--contraste);
     height: 50px;
     display: flex;
     align-items: center;
@@ -39,7 +45,7 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--texto);
     font-weight: bold;
 }
 
@@ -50,10 +56,4 @@ nav a{
 footer{
     margin-top: 50px;
     text-align: center;
-}
-
-@media (min-width: 1650px){
-    html{
-        font-size: 1.3em;
-    }
 }
